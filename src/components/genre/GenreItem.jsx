@@ -1,12 +1,12 @@
-import styled from "styled-components";
-import PropTypes from "prop-types";
-import { useEffect, useState } from "react";
-import axios from "../../api/axios";
-import { apiURL } from "../../constants";
-import { API_KEY } from "../../api/api_key";
-import { BsStar } from "react-icons/bs";
-import { Link } from "react-router-dom";
-import { StarRating } from "../common";
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import { useEffect, useState } from 'react';
+import axios from '../../api/axios';
+import { apiURL } from '../../constants';
+import { API_KEY } from '../../api/api_key';
+import { BsStar } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
+import { StarRating } from '../common';
 
 const GenreItem = ({ gameItem }) => {
   const [gameData, setGameData] = useState({});
@@ -20,6 +20,7 @@ const GenreItem = ({ gameItem }) => {
     };
 
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -81,7 +82,7 @@ const GenreItemWrapper = styled.div`
     position: relative;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;

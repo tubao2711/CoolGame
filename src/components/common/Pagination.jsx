@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import PropTypes from "prop-types";
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 
 const Pagination = ({ pageHandler, nextPage, prevPage, currentPage }) => {
   const pageNextHandler = () => {
@@ -16,7 +16,7 @@ const Pagination = ({ pageHandler, nextPage, prevPage, currentPage }) => {
       <button
         type="button"
         className={`prev-btn fw-6 text-uppercase text-white d-flex align-items-center ${
-          prevPage === null ? "disabled" : ""
+          prevPage === null ? 'disabled' : ''
         }`}
         disabled={prevPage === null ? true : false}
         onClick={pagePrevHandler}
@@ -26,7 +26,7 @@ const Pagination = ({ pageHandler, nextPage, prevPage, currentPage }) => {
       <button
         type="button"
         className={`next-btn fw-6 text-uppercase text-white d-flex align-items-center ${
-          nextPage === null ? "disabled" : ""
+          nextPage === null ? 'disabled' : ''
         }`}
         disabled={nextPage === null ? true : false}
         onClick={pageNextHandler}
